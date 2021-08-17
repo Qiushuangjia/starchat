@@ -1,15 +1,16 @@
-# umi project
+# StarChat
 
-## Getting Started
+## 一个简易的即时聊天室
 
-Install dependencies,
+
+安装,
 
 ```bash
-$ yarn
+$ npm install
 ```
 
-Start the dev server,
+启动,
 
 ```bash
-$ yarn start
+$ npm run start
 ```
