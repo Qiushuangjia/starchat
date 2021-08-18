@@ -9,7 +9,7 @@ export default defineConfig({
       path: '/',
       component: '@/pages/layout/index.tsx',
       routes: [
-        { path: '/', component: '@/pages/chat' },
+        { path: '/', component: '@/pages/chat/index_class.tsx' },
         { path: '/login', component: '@/pages/user/login' },
       ],
     },

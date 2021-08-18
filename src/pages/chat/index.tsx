@@ -97,9 +97,11 @@ export default function Chat(props: any) {
       }
       pushMessage([...messagesRef.current]);
       setList(current);
+      console.log(current);
     });
     socket.on('join', async (data: any) => {
       // 监听用户进入
+      console.log(listRef.current, list, '!!!!!!');
       let { current } = listRef;
       let res = await get(`${base_url}/login_user_list`, {
         name: user ? user['name'] : '',
@@ -144,6 +146,7 @@ export default function Chat(props: any) {
     socket.emit('exit', { name: user.name, date: moment().toDate() });
   };
 
+  console.log(list, listRef.current, '.............');
   return (
     <div className={'container'}>
       <div className={'title_user'}>
